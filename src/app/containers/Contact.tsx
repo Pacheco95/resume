@@ -1,14 +1,16 @@
 import ExternalLink from "@/components/ExternalLink";
-import { SiGmail, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { SiWhatsapp } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 import { Section } from "@/app/containers";
+import { AiOutlineMail } from "react-icons/ai";
+import { BiLogoLinkedin } from "react-icons/bi";
 
 export interface ContactProps {}
 
 const contacts = [
   {
     href: "mailto:mdpgd95@gmail.com",
-    icon: SiGmail,
+    icon: AiOutlineMail,
     text: "mdpgd95@gmail.com",
   },
   {
@@ -18,7 +20,7 @@ const contacts = [
   },
   {
     href: "https://linkedin.com/in/michaelpacheco95",
-    icon: SiLinkedin,
+    icon: BiLogoLinkedin,
     text: "michaelpacheco95",
   },
   {
