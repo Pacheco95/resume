@@ -16,7 +16,7 @@ const Home: NextPage = () => (
         priority: true,
       }}
     />
-    <main className="m-auto flex flex-col gap-y-10 align-center p-8 text-justify max-w-lg lg:max-w-5xl">
+    <main className="m-auto flex flex-col gap-y-6 align-center p-8 text-justify max-w-lg lg:max-w-5xl">
       <Contact />
       <About />
       <Languages
