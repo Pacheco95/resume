@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { About, Contact, Header } from "@/app/containers";
+import Languages from "@/app/containers/Languages";
 
 const Home: NextPage = () => (
   <>
@@ -17,6 +18,12 @@ const Home: NextPage = () => (
     <main className="m-auto flex flex-col gap-y-10 align-center p-8 text-justify max-w-lg lg:max-w-5xl">
       <Contact />
       <About />
+      <Languages
+        languages={[
+          { name: "Portuguese", proficiency: "Native" },
+          { name: "English", proficiency: "Advanced" },
+        ]}
+      />
     </main>
   </>
 );
