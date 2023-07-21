@@ -4,9 +4,22 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title = "Michael Pacheco - Resume";
+
 export const metadata: Metadata = {
-  title: "Michael Pacheco",
-  description: "Michael Pacheco's portfolio",
+  title: title,
+  description: title,
+  applicationName: title,
+  authors: [
+    {
+      name: "Michael Pacheco",
+      url: "https://linkedin.com/in/michaelpacheco95",
+    },
+  ],
+  creator: "Michael Pacheco",
+  keywords: ["cv", "curriculum vitae", "resume", "portfolio"],
+  colorScheme: "only light",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
