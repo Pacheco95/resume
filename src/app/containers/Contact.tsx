@@ -1,7 +1,7 @@
 import ExternalLink from "@/components/ExternalLink/ExternalLink";
 import { SiGmail, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
-import Section from "@/app/containers/Section";
+import { Section } from "@/app/containers";
 
 export interface ContactProps {}
 

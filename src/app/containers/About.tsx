@@ -1,4 +1,4 @@
-import Section from "@/app/containers/Section";
+import { Section } from "@/app/containers";
 
 export interface AboutProps {}
 

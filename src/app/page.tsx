@@ -1,7 +1,5 @@
-import Header from "@/app/containers/Header";
 import { NextPage } from "next";
-import Contact from "@/app/containers/Contact";
-import About from "@/app/containers/About";
+import { About, Contact, Header } from "@/app/containers";
 
 const Home: NextPage = () => (
   <>
