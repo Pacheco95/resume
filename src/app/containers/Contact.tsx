@@ -1,6 +1,7 @@
 import ExternalLink from "@/components/ExternalLink/ExternalLink";
 import { SiGmail, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
+import Section from "@/app/containers/Section";
 
 export interface ContactProps {}
 
@@ -28,10 +29,7 @@ const contacts = [
 ];
 
 const Contact = ({}: ContactProps) => (
-  <section className="text-gray-700">
-    <h2 className="text-primary text-xl font-bold pb-2 border-b-2 border-primary inline-block mb-4">
-      Contact
-    </h2>
+  <Section title="Contact">
     <ul className="flex flex-wrap gap-y-4 gap-x-8">
       {contacts.map(({ icon: Icon, href, text }) => (
         <li key={href}>
@@ -42,7 +40,7 @@ const Contact = ({}: ContactProps) => (
         </li>
       ))}
     </ul>
-  </section>
+  </Section>
 );
 
 export default Contact;
