@@ -1,4 +1,4 @@
-import ExternalLink from "@/components/ExternalLink/ExternalLink";
+import ExternalLink from "@/components/ExternalLink";
 import { SiGmail, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 import { Section } from "@/app/containers";
@@ -30,7 +30,7 @@ const contacts = [
 
 const Contact = ({}: ContactProps) => (
   <Section title="Contact">
-    <ul className="flex flex-wrap gap-y-4 gap-x-8">
+    <ul className="grid-1-2-4">
       {contacts.map(({ icon: Icon, href, text }) => (
         <li key={href}>
           <ExternalLink href={href}>
