@@ -1,6 +1,7 @@
 import Header from "@/app/containers/Header";
 import { NextPage } from "next";
 import Contact from "@/app/containers/Contact";
+import About from "@/app/containers/About";
 
 const Home: NextPage = () => (
   <>
@@ -17,6 +18,7 @@ const Home: NextPage = () => (
     />
     <main className="m-auto flex flex-col gap-y-10 align-center p-8 text-justify max-w-lg lg:max-w-5xl">
       <Contact />
+      <About />
     </main>
   </>
 );
