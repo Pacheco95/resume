@@ -1,10 +1,11 @@
 import { forwardRef, type JSX } from "react";
+import { cn } from "@/classnames";
 
 type Anchor = JSX.IntrinsicElements["a"];
 
-import { cn } from "@/utils";
-
-interface ExternalLinkProps extends Omit<Anchor, "target"> {}
+interface ExternalLinkProps extends Omit<Anchor, "target"> {
+  href: string;
+}
 
 const ExternalLink = forwardRef<HTMLAnchorElement, ExternalLinkProps>(
   function ExternalLinkForwardRef({ className, children, ...props }, ref) {
