@@ -14,9 +14,9 @@ export interface ExperienceProps {
     tags: string[];
     detail: ReactNode;
     start: Date;
-    end: Date;
+    end?: Date;
     skills: string[];
-    achievements?: string[];
+    achievements?: ReactNode[];
   }[];
 }
 
@@ -25,10 +25,10 @@ const Experience = ({ experiences }: ExperienceProps) => (
     <ul className="flex gap-y-4 gap-x-12 flex-wrap">
       {experiences.map((xp) => (
         <li
-          key={xp.company.name}
-          className="after:w-1/5 after:mt-6 after:h-0.5 after:block after:bg-gray-200 after:m-auto last:after:hidden"
+          key={xp.start.getTime()}
+          className="after:w-1/5 after:mt-6 after:rounded after:h-0.5 after:block after:bg-gray-300 after:m-auto last:after:hidden"
         >
-          <p>
+          <p className="text-left">
             <ExternalLink href={xp.company.linkedinUrl} className="font-bold">
               {xp.company.name}
             </ExternalLink>
@@ -43,9 +43,7 @@ const Experience = ({ experiences }: ExperienceProps) => (
               <p className="font-bold mt-1">Achievements</p>
               <ul>
                 {xp.achievements.map((achievement, index) => (
-                  <li key={index}>
-                    Reduced client onboarding duration from months to minutes.
-                  </li>
+                  <li key={index}>{achievement}</li>
                 ))}
               </ul>
             </>

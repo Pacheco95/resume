@@ -58,9 +58,9 @@ const Home: NextPage = () => (
               name: "Stilingue",
               linkedinUrl: "https://www.linkedin.com/company/10796074",
             },
-            role: "Backend Developer",
-            start: new Date("2019-02-04"),
-            end: new Date("2020-09-01"),
+            role: "Back-end Developer",
+            start: new Date("2019-02-04T00:00-03:00"),
+            end: new Date("2020-09-01T00:00-03:00"),
             detail: (
               <p>
                 Worked on a social listening product called WarRoom. Broke parts
@@ -68,7 +68,7 @@ const Home: NextPage = () => (
                 business logic with automated tests. Worked in an IT support
                 team automating manual time consuming tasks and writing scripts
                 for data correction and normalization. Maintained containerized
-                applications. Developed a backoffice frontend application to be
+                applications. Developed a backoffice front-end application to be
                 used by the call center.
               </p>
             ),
@@ -96,9 +96,9 @@ const Home: NextPage = () => (
               name: "Usemobile",
               linkedinUrl: "https://www.linkedin.com/company/usemobile",
             },
-            role: "Backend Developer",
-            start: new Date("2020-10-06"),
-            end: new Date("2021-05-31"),
+            role: "Back-end Developer",
+            start: new Date("2020-10-06T00:00-03:00"),
+            end: new Date("2021-05-31T00:00-03:00"),
             detail: (
               <>
                 Developed managing dashboards for three different smartphone
@@ -139,10 +139,92 @@ const Home: NextPage = () => (
               "Nuxt",
               "Typescript",
               "Javascript",
+              "MongoDB",
               "Amazon EKS",
               "Amazon S3",
             ],
             tags: ["Full Time", "Remote", "Software house"],
+          },
+          {
+            company: {
+              name: "PISOMTECH",
+              linkedinUrl: "https://www.linkedin.com/company/pisomtech",
+            },
+            role: "Full-Stack Developer",
+            start: new Date("2021-05-25T00:00-03:00"),
+            end: new Date("2021-09-30T23:59-03:00"),
+            detail: (
+              <p>
+                Allocated to{" "}
+                <span className="font-bold">
+                  <ExternalLink href="https://www.linkedin.com/company/yandeh">
+                    Yandeh
+                  </ExternalLink>
+                </span>{" "}
+                by PISOMTECH as an independent contractor. I worked on a
+                full-stack project to manage retail product stocks. Very often,
+                I was requested to create database scripts to normalize product
+                data from different retailers. I was also responsible for
+                creating automated use case tests for existing and new features.
+              </p>
+            ),
+            skills: [
+              "Java",
+              "Javascript",
+              "Typescript",
+              "React",
+              "PostgreSQL",
+              "PL/pgSQL",
+              "AWS | S3 | SQS | SNS | Lambda",
+            ],
+            tags: ["Indirect Contract", "Remote"],
+          },
+          {
+            company: {
+              name: "PISOMTECH",
+              linkedinUrl: "https://www.linkedin.com/company/pisomtech",
+            },
+            role: "Senior Full-Stack Engineer",
+            // start: new Date("2021-10-18T00:00-03:00"),
+            start: new Date("2021-10-01T00:00-03:00"),
+            detail: (
+              <p>
+                Allocated to{" "}
+                <span className="font-bold">
+                  <ExternalLink href="https://www.linkedin.com/company/luizalabs">
+                    Luizalabs
+                  </ExternalLink>
+                </span>{" "}
+                by PISOMTECH as an independent contractor. As a holding retail
+                company, Magazine Luiza has acquired a large set of e-commerces
+                and marketplaces. It's very challenging to manage the entire
+                ecosystem, so I was responsible to help in both architecting and
+                development of an API to unify it in a single service. I also
+                developed a payment split API to replace an existing, and
+                expensive, 3rd party paid software. I have trained other
+                developers helping them to grow technically and personally.
+              </p>
+            ),
+            achievements: [
+              <em key={1}>
+                Reduced costs by approximately R$ 10 million a year.
+              </em>,
+            ],
+            skills: [
+              "Python",
+              "Kubernetes",
+              "FastAPI",
+              "Flask",
+              "GCP",
+              "GKE",
+              "GCE",
+              "MongoDB",
+              "Redis",
+              "RabbitMQ",
+              "Prometheus",
+              "Grafana",
+            ],
+            tags: ["Indirect Contract", "Remote"],
           },
         ]}
       />

@@ -1,4 +1,5 @@
 import { Section } from "@/app/containers";
+import ExternalLink from "@/components/ExternalLink";
 
 export interface EducationProps {
   education: {
@@ -20,9 +21,9 @@ const Education = ({ education }: EducationProps) => (
           <p>{ed.year}</p>
           <p className="font-bold">{ed.grade}</p>
           <p>
-            <a href={ed.institution.url} target="_blank" className="underline">
+            <ExternalLink href={ed.institution.url}>
               {ed.institution.name}
-            </a>
+            </ExternalLink>
             , {ed.country}
           </p>
         </li>
