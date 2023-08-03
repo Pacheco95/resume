@@ -4,6 +4,7 @@ import Languages from "@/app/containers/Languages";
 import Education from "@/app/containers/Education";
 import Experience from "@/app/containers/Experience";
 import { dash } from "@/separators";
+import ExternalLink from "@/components/ExternalLink";
 
 const Home: NextPage = () => (
   <>
@@ -55,12 +56,13 @@ const Home: NextPage = () => (
           {
             company: {
               name: "Stilingue",
-              url: "https://stilingue.com.br",
+              linkedinUrl: "https://www.linkedin.com/company/10796074",
             },
+            role: "Backend Developer",
             start: new Date("2019-02-04"),
             end: new Date("2020-09-01"),
             detail: (
-              <>
+              <p>
                 Worked on a social listening product called WarRoom. Broke parts
                 of a monolith into multiple monitored micro-services. Tested
                 business logic with automated tests. Worked in an IT support
@@ -68,7 +70,7 @@ const Home: NextPage = () => (
                 for data correction and normalization. Maintained containerized
                 applications. Developed a backoffice frontend application to be
                 used by the call center.
-              </>
+              </p>
             ),
             achievements: [
               "Reduced client onboarding duration from months to minutes.",
@@ -87,7 +89,60 @@ const Home: NextPage = () => (
               "Vue",
               "CI/CD",
             ],
-            tags: ["Hybrid", "Full-time"],
+            tags: ["Full-time", "Hybrid"],
+          },
+          {
+            company: {
+              name: "Usemobile",
+              linkedinUrl: "https://www.linkedin.com/company/usemobile",
+            },
+            role: "Backend Developer",
+            start: new Date("2020-10-06"),
+            end: new Date("2021-05-31"),
+            detail: (
+              <>
+                Developed managing dashboards for three different smartphone
+                apps:
+                <ul className="list-disc list-inside">
+                  <li>
+                    <ExternalLink href="https://appmeuspa.com.br">
+                      appmeuspa.com.br
+                    </ExternalLink>
+                    {`${dash}`}
+                    Developed the back end with Node and Express framework.
+                    Developed the front end with React and JavaScript
+                  </li>
+                  <li>
+                    <ExternalLink href="https://sempatrao.com.br">
+                      sempatrao.com.br
+                    </ExternalLink>
+                    {`${dash}`}
+                    Developed the back end with Node and Nest framework.
+                    Developed the front end with React and Typescript
+                  </li>
+                  <li>
+                    <ExternalLink href="https://evacard.com.br">
+                      evacard.com.br
+                    </ExternalLink>
+                    {`${dash}`}
+                    Developed the front end with Vue, Nuxt, and Typescript
+                  </li>
+                </ul>
+              </>
+            ),
+            skills: [
+              "Node",
+              "Express",
+              "Nest",
+              "React",
+              "Vue",
+              "Nuxt",
+              "Typescript",
+              "Javascript",
+              "Amazon EKS",
+              "Amazon S3",
+            ],
+            tags: ["Full Time", "Remote", "Software house"],
           },
         ]}
       />
