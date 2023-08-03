@@ -26,7 +26,7 @@ const Experience = ({ experiences }: ExperienceProps) => (
       {experiences.map((xp) => (
         <li
           key={xp.start.getTime()}
-          className="after:w-1/5 after:mt-6 after:rounded after:h-0.5 after:block after:bg-gray-300 after:m-auto last:after:hidden"
+          className="break-inside-avoid after:w-1/5 after:mt-6 after:rounded after:h-0.5 after:block after:bg-gray-300 after:m-auto last:after:hidden"
         >
           <p className="text-left">
             <ExternalLink href={xp.company.linkedinUrl} className="font-bold">
