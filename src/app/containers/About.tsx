@@ -15,11 +15,10 @@ const About = ({}: AboutProps) => (
       years old). Obsessed with finance-related subjects, especially
       investments. Worked for many companies with multidisciplinary teams. Has
       great communication skills. Responsible for key projects as the main
-      engineer. Driven by inspiration and challenges.{" "}
-      <em>
-        Currently looking for leadership positions, but with hands on the code,
-        in USA or Canada.
-      </em>
+      engineer. Driven by inspiration and challenges.
+    </p>
+    <p>
+      <em>Looking for positions in USA or Canada.</em>
     </p>
   </Section>
 );
