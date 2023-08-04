@@ -6,7 +6,7 @@ import Experience, { type WorkExperience } from "@/app/containers/Experience";
 import { dash } from "@/separators";
 import ExternalLink from "@/components/ExternalLink";
 import Certifications from "@/app/containers/Certifications";
-import PrintButton from "@/components/PrintButton";
+import DownloadButton from "@/components/DownloadButton";
 
 const experiences: WorkExperience[] = [
   {
@@ -261,7 +261,7 @@ const Home: NextPage = () => (
         ]}
       />
     </main>
-    <PrintButton />
+    <DownloadButton />
   </>
 );
 

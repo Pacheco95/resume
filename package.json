@@ -21,8 +21,10 @@
     "date-fns": "^2.30.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
+    "file-saver": "^2.0.5",
     "next": "13.4.10",
     "postcss": "8.4.26",
+    "puppeteer": "^21.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
@@ -31,6 +33,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.5",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.2.3",
