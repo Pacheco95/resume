@@ -220,7 +220,7 @@ const Home: NextPage = () => (
   <>
     <Header
       name="Michael Pacheco"
-      role="Senior Software Engineer"
+      role="Senior Full-Stack Engineer"
       imageProps={{
         width: 144,
         height: 144,
