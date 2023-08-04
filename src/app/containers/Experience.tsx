@@ -8,7 +8,7 @@ export interface ExperienceProps {
   experiences: {
     company: {
       name: string;
-      linkedinUrl: string;
+      linkedinUrl?: string;
     };
     role: string;
     tags: string[];
@@ -29,9 +29,13 @@ const Experience = ({ experiences }: ExperienceProps) => (
           className="break-inside-avoid after:w-1/5 after:mt-6 after:rounded after:h-0.5 after:block after:bg-gray-300 after:m-auto last:after:hidden"
         >
           <p className="text-left">
-            <ExternalLink href={xp.company.linkedinUrl} className="font-bold">
-              {xp.company.name}
-            </ExternalLink>
+            {xp.company.linkedinUrl ? (
+              <ExternalLink href={xp.company.linkedinUrl} className="font-bold">
+                {xp.company.name}
+              </ExternalLink>
+            ) : (
+              <span className="font-bold">{xp.company.name}</span>
+            )}
             {` ${dot} `}
             {[xp.role, ...xp.tags].join(` ${dot} `)}
             <br />

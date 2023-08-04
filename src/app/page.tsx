@@ -94,6 +94,45 @@ const Home: NextPage = () => (
           },
           {
             company: {
+              name: "Freelancer",
+            },
+            role: "Full-Stack Developer",
+            start: new Date("2020-05-15T00:00-03:00"),
+            end: new Date("2021-02-04T00:00-03:00"),
+            detail: (
+              <p>
+                Worked part-time as a freelancer. Developed the backend for
+                frontend (BFF) for an{" "}
+                <ExternalLink href="https://www.heroiscovid.com.br">
+                  online memorial
+                </ExternalLink>{" "}
+                board of healthcare professionals that died of COVID-19.
+                <br />
+                Developed the front-end and back-end for a dashboard for a
+                selective waste collection mobile app called{" "}
+                <ExternalLink href="https://www.cataki.org/">
+                  Cataki
+                </ExternalLink>
+                .
+              </p>
+            ),
+            skills: [
+              "Express",
+              "Adonis",
+              "Heroku",
+              "MongoDB",
+              "JavaScript",
+              "React",
+              "Node",
+              "TypeScript",
+              "Postgres",
+              "Material UI",
+              "Styled-Components",
+            ],
+            tags: ["Part-Time", "Remote"],
+          },
+          {
+            company: {
               name: "Usemobile",
               linkedinUrl: "https://www.linkedin.com/company/usemobile",
             },
