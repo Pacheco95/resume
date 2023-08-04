@@ -8,6 +8,10 @@
   }
 }
 
+body {
+  position: relative;
+}
+
 @media print {
   @page {
     size: A4 portrait;
@@ -24,5 +28,9 @@
 
   @page :right {
     margin-top: 3rem;
+  }
+
+  button {
+    display: none;
   }
 }
