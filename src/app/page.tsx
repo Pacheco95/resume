@@ -218,17 +218,7 @@ const experiences: WorkExperience[] = [
 
 const Home: NextPage = () => (
   <>
-    <Header
-      name="Michael Pacheco"
-      role="Senior Full-Stack Engineer"
-      imageProps={{
-        width: 144,
-        height: 144,
-        src: "https://placekitten.com/800/800",
-        alt: "Michael Pacheco's picture",
-        priority: true,
-      }}
-    />
+    <Header name="Michael Pacheco" role="Senior Full-Stack Engineer" />
     <main className="m-auto flex flex-col gap-y-6 align-center p-8 text-justify max-w-lg lg:max-w-5xl print:max-w-2xl">
       <Contact />
       <About />
