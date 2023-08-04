@@ -5,6 +5,7 @@ import Education from "@/app/containers/Education";
 import Experience from "@/app/containers/Experience";
 import { dash } from "@/separators";
 import ExternalLink from "@/components/ExternalLink";
+import Certifications from "@/app/containers/Certifications";
 
 const Home: NextPage = () => (
   <>
@@ -50,7 +51,6 @@ const Home: NextPage = () => (
           },
         ]}
       />
-
       <Experience
         experiences={[
           {
@@ -225,6 +225,15 @@ const Home: NextPage = () => (
               "Grafana",
             ],
             tags: ["Indirect Contract", "Remote"],
+          },
+        ]}
+      />
+      <Certifications
+        certifications={[
+          {
+            title: "Ethereum and Solidity: The Complete Developer's Guide",
+            url: "https://www.udemy.com/certificate/UC-280228e5-ae76-4926-a8fa-8b23c59ac1b1",
+            year: 2022,
           },
         ]}
       />

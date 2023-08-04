@@ -21,7 +21,7 @@ export interface ExperienceProps {
 }
 
 const Experience = ({ experiences }: ExperienceProps) => (
-  <Section title="Experience">
+  <Section title="Experience" className="experience-section">
     <ul className="flex gap-y-4 gap-x-12 flex-wrap">
       {experiences.map((xp) => (
         <li
