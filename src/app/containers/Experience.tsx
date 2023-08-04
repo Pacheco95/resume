@@ -35,7 +35,7 @@ const Experience = ({ experiences }: ExperienceProps) => (
             {` ${dot} `}
             {[xp.role, ...xp.tags].join(` ${dot} `)}
             <br />
-            {formatRange(xp.start, xp.end)}
+            <span className="font-medium">{formatRange(xp.start, xp.end)}</span>
           </p>
           <div className="mt-1">{xp.detail}</div>
           {xp.achievements && (
