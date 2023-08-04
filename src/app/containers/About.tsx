@@ -17,8 +17,8 @@ const About = ({}: AboutProps) => (
       great communication skills. Responsible for key projects as the main
       engineer. Driven by inspiration and challenges.{" "}
       <em>
-        Currently looking for leadership opportunities, but with hands on the
-        code.
+        Currently looking for leadership positions, but with hands on the code,
+        in USA or Canada.
       </em>
     </p>
   </Section>

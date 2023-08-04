@@ -4,20 +4,22 @@ import { dot } from "@/separators";
 import { type ReactNode } from "react";
 import { formatRange } from "@/date-utils";
 
+export interface WorkExperience {
+  company: {
+    name: string;
+    linkedinUrl?: string;
+  };
+  role: string;
+  tags: string[];
+  detail: ReactNode;
+  start: Date;
+  end?: Date;
+  skills: string[];
+  achievements?: ReactNode[];
+}
+
 export interface ExperienceProps {
-  experiences: {
-    company: {
-      name: string;
-      linkedinUrl?: string;
-    };
-    role: string;
-    tags: string[];
-    detail: ReactNode;
-    start: Date;
-    end?: Date;
-    skills: string[];
-    achievements?: ReactNode[];
-  }[];
+  experiences: WorkExperience[];
 }
 
 const Experience = ({ experiences }: ExperienceProps) => (

@@ -32,7 +32,7 @@ const contacts = [
 
 const Contact = ({}: ContactProps) => (
   <Section title="Contact">
-    <ul className="grid-1-2-4">
+    <ul className="grid-1-2-4 lg:flex lg:flex-wrap lg:gap-x-8">
       {contacts.map(({ icon: Icon, href, text }) => (
         <li key={href}>
           <ExternalLink href={href}>
