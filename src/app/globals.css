@@ -7,3 +7,22 @@
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-1;
   }
 }
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  @page :first {
+    margin-top: 0;
+  }
+
+  @page :left {
+    margin-top: 3rem;
+  }
+
+  @page :right {
+    margin-top: 3rem;
+  }
+}
