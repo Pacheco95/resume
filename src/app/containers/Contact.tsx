@@ -4,6 +4,7 @@ import { TbWorldWww } from "react-icons/tb";
 import { Section } from "@/app/containers";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
 
 export interface ContactProps {}
 
@@ -27,6 +28,11 @@ const contacts = [
     href: "https://michael-pacheco.vercel.app",
     icon: TbWorldWww,
     text: "Online portfolio",
+  },
+  {
+    href: "https://github.com/Pacheco95",
+    icon: FaGithub,
+    text: "GitHub",
   },
 ];
 
