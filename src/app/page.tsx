@@ -55,7 +55,7 @@ const experiences: WorkExperience[] = [
     end: new Date("2021-02-04T00:00-03:00"),
     detail: (
       <p>
-        Worked part-time as a freelancer. Developed the backend for frontend
+        Worked part-time as a freelancer. Developed the back-end for front-end
         (BFF) for an{" "}
         <ExternalLink href="https://www.heroiscovid.com.br">
           online memorial
@@ -98,24 +98,24 @@ const experiences: WorkExperience[] = [
             <ExternalLink href="https://appmeuspa.com.br">
               appmeuspa.com.br
             </ExternalLink>
-            {`${dash}`}
-            Developed the back end with Node and Express framework. Developed
-            the front end with React and JavaScript
+            {` ${dash} `}
+            Developed the back-end with Node and Express framework. Developed
+            the front-end with React and JavaScript
           </li>
           <li>
             <ExternalLink href="https://sempatrao.com.br">
               sempatrao.com.br
             </ExternalLink>
-            {`${dash}`}
-            Developed the back end with Node and Nest framework. Developed the
-            front end with React and Typescript
+            {` ${dash} `}
+            Developed the back-end with Node and Nest framework. Developed the
+            front-end with React and Typescript
           </li>
           <li>
             <ExternalLink href="https://evacard.com.br">
               evacard.com.br
             </ExternalLink>
-            {`${dash}`}
-            Developed the front end with Vue, Nuxt, and Typescript
+            {` ${dash} `}
+            Developed the front-end with Vue, Nuxt, and Typescript
           </li>
         </ul>
       </>
@@ -232,7 +232,7 @@ const Home: NextPage = () => (
         education={[
           {
             year: 2019,
-            grade: `Bachelor ${dash} Computer Science`,
+            grade: `Bachelor's Degree in Computer Science`,
             institution: {
               name: "Federal University of Ouro Preto",
               url: "https://ufop.br/",
@@ -241,7 +241,7 @@ const Home: NextPage = () => (
           },
           {
             year: 2023,
-            grade: `MBA ${dash} Investments & Asset Allocation`,
+            grade: `MBA in Investments & Asset Allocation`,
             institution: {
               name: "UniBTA",
               url: "https://unibta.edu.br/",
