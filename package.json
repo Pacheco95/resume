@@ -9,7 +9,8 @@
     "lint": "next lint",
     "format": "prettier . --write",
     "format:staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "export:pdf": "ts-node src/scripts/export-pdf.js"
   },
   "dependencies": {
     "@types/node": "20.4.2",
@@ -21,10 +22,8 @@
     "date-fns": "^2.30.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
-    "file-saver": "^2.0.5",
     "next": "13.4.10",
     "postcss": "8.4.26",
-    "puppeteer": "^21.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
@@ -33,11 +32,12 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/file-saver": "^2.0.5",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.2.3",
-    "prettier": "3.0.0"
+    "prettier": "3.0.0",
+    "puppeteer": "^21.0.1",
+    "ts-node": "^10.9.1"
   },
   "lint-staged": {
     "*.{css,scss,js,ts,tsx,json,html}": "prettier --write"

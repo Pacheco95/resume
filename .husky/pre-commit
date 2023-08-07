@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+npm run export:pdf
+git add public/michael-pacheco-resume.pdf
 npm run lint
 npx lint-staged
