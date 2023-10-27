@@ -175,8 +175,8 @@ const experiences: WorkExperience[] = [
       linkedinUrl: "https://www.linkedin.com/company/pisomtech",
     },
     role: "Senior Full-Stack Engineer",
-    // start: new Date("2021-10-18T00:00-03:00"),
     start: new Date("2021-10-01T00:00-03:00"),
+    end: new Date("2023-10-06T23:59-03:00"),
     detail: (
       <p>
         Allocated to{" "}
