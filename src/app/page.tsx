@@ -7,8 +7,6 @@ import Certifications from "@/app/containers/Certifications";
 import DownloadButton from "@/components/DownloadButton";
 import experiences from "@/app/experiences";
 
-const reversedExperiences = experiences.reverse();
-
 const Home: NextPage = () => (
   <>
     <Header name="Michael Pacheco" role="Senior Full-Stack Engineer" />
@@ -43,7 +41,7 @@ const Home: NextPage = () => (
           },
         ]}
       />
-      <Experience experiences={reversedExperiences} />
+      <Experience experiences={experiences} />
       <Certifications
         certifications={[
           {
