@@ -1,22 +1,8 @@
 import { Section } from "@/app/containers";
 import ExternalLink from "@/components/ExternalLink";
 import { dot } from "@/separators";
-import { type ReactNode } from "react";
 import { formatRange } from "@/date-utils";
-
-export interface WorkExperience {
-  company: {
-    name: string;
-    linkedinUrl?: string;
-  };
-  role: string;
-  tags: string[];
-  detail: ReactNode;
-  start: Date;
-  end?: Date;
-  skills: string[];
-  achievements?: ReactNode[];
-}
+import { WorkExperience } from "@/app/experiences";
 
 export interface ExperienceProps {
   experiences: WorkExperience[];
@@ -25,7 +11,7 @@ export interface ExperienceProps {
 const Experience = ({ experiences }: ExperienceProps) => (
   <Section title="Experience" className="experience-section">
     <ul className="flex gap-y-4 gap-x-12 flex-wrap">
-      {experiences.map((xp) => (
+      {experiences.reverse().map((xp) => (
         <li
           key={xp.start.getTime()}
           className="break-inside-avoid after:w-1/5 after:mt-6 after:rounded after:h-0.5 after:block after:bg-gray-300 after:m-auto last:after:hidden"

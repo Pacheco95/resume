@@ -1,5 +1,6 @@
 import { forwardRef, type JSX } from "react";
 import { cn } from "@/classnames";
+import { removeUrlPrefix } from "@/string-utils";
 
 type Anchor = JSX.IntrinsicElements["a"];
 
@@ -16,7 +17,7 @@ const ExternalLink = forwardRef<HTMLAnchorElement, ExternalLinkProps>(
         target="_blank"
         className={cn("underline", className)}
       >
-        {children}
+        {children || removeUrlPrefix(props.href)}
       </a>
     );
   },
